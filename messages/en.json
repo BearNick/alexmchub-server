@@ -47,9 +47,15 @@
     "unavailable": "Status unavailable",
     "players": "Players",
     "playerCount": "{online} / {max}",
+    "playersOnline": "Players online: {online}",
+    "playersOnlineCount": "Players online: {online} / {max}",
     "version": "Version",
     "latency": "Latency",
-    "latencyValue": "{value} ms"
+    "latencyValue": "{value} ms",
+    "address": "Server address",
+    "copyAddress": "Copy server address",
+    "addressCopied": "Server address copied",
+    "comingSoon": "Coming Soon"
   },
   "home": {
     "metaTitle": "AlexMCHub — Modern Minecraft Infrastructure",

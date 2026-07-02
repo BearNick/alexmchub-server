@@ -1,7 +1,6 @@
 import { ArrowRight, CircleOff, Download } from "lucide-react"
 import { getTranslations } from "next-intl/server"
 
-import { CopyField } from "@/components/data/copy-field"
 import { DocumentSearch } from "@/components/data/document-search"
 import { Reveal } from "@/components/motion/reveal"
 import { ServerStatusCard } from "@/components/server/server-status-card"
@@ -19,10 +18,6 @@ export async function SectionPage({ section }: { section: Section }) {
   const Icon = config.icon
   const namespace = `pages.${section}` as const
   const items = featureKeys.map((key) => ({ title: t(`${namespace}.features.${key}.title`), description: t(`${namespace}.features.${key}.description`) }))
-  const javaAddress = process.env.NEXT_PUBLIC_JAVA_SERVER_ADDRESS
-  const bedrockAddress = process.env.NEXT_PUBLIC_BEDROCK_SERVER_ADDRESS
-  const bedrockPort = process.env.NEXT_PUBLIC_BEDROCK_SERVER_PORT
-  const bedrockConnection = bedrockAddress ? `${bedrockAddress}${bedrockPort ? `:${bedrockPort}` : ""}` : undefined
   const launcherUrl = process.env.NEXT_PUBLIC_LAUNCHER_DOWNLOAD_URL
 
   return (
@@ -38,15 +33,14 @@ export async function SectionPage({ section }: { section: Section }) {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-zinc-400">{t(`${namespace}.description`)}</p>
           <div className="mt-9 flex flex-wrap gap-3">
             <Button asChild className="h-10 bg-emerald-400 px-4 text-black hover:bg-emerald-300"><Link href={config.primary}>{t(`${namespace}.primaryAction`)}<ArrowRight data-icon="inline-end" /></Link></Button>
-            <Button asChild variant="outline" className="h-10 border-white/10 bg-white/[0.03] px-4 hover:bg-white/[0.07]"><Link href={config.secondary}>{t(`${namespace}.secondaryAction`)}</Link></Button>
+            <Button asChild variant="outline" className="h-10 border-white/10 bg-white/[0.03] px-4 hover:bg-white/[0.07]">{section === "play" ? <a href="https://www.minecraft.net/download" target="_blank" rel="noreferrer">{t(`${namespace}.secondaryAction`)}</a> : <Link href={config.secondary}>{t(`${namespace}.secondaryAction`)}</Link>}</Button>
           </div>
         </Reveal>
       </section>
 
       {section === "play" && (
         <section className="relative mx-auto grid max-w-7xl gap-4 px-5 pb-20 sm:px-8 md:grid-cols-2">
-          <Card className="border border-white/[0.06] bg-[#0d0f0e] ring-0"><CardHeader><CardTitle>{items[0].title}</CardTitle><CardDescription className="leading-6">{items[0].description}</CardDescription></CardHeader><CardContent><CopyField value={javaAddress} unavailable={t("common.unavailable")} copyLabel={t("common.copy")} copiedLabel={t("common.copied")} /></CardContent></Card>
-          <Card className="border border-white/[0.06] bg-[#0d0f0e] ring-0"><CardHeader><CardTitle>{items[1].title}</CardTitle><CardDescription className="leading-6">{items[1].description}</CardDescription></CardHeader><CardContent><CopyField value={bedrockConnection} unavailable={t("common.unavailable")} copyLabel={t("common.copy")} copiedLabel={t("common.copied")} /></CardContent></Card>
+          <ServerStatusCard playEdition={{ javaTitle: items[0].title, javaDescription: items[0].description, bedrockTitle: items[1].title, bedrockDescription: items[1].description }} />
         </section>
       )}
 

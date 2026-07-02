@@ -1,5 +1,5 @@
-import { hasLocale } from "next-intl"
-import { setRequestLocale } from "next-intl/server"
+import { hasLocale, NextIntlClientProvider } from "next-intl"
+import { getMessages, setRequestLocale } from "next-intl/server"
 import { notFound } from "next/navigation"
 
 import { SiteFooter } from "@/components/site/site-footer"
@@ -17,12 +17,15 @@ export default async function LocaleLayout({
   const { locale } = await params
   if (!hasLocale(routing.locales, locale)) notFound()
   setRequestLocale(locale)
+  const messages = await getMessages({ locale })
 
   return (
-    <div className="flex min-h-screen flex-col">
-      <SiteHeader locale={locale} />
-      {children}
-      <SiteFooter />
-    </div>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <div className="flex min-h-screen flex-col">
+        <SiteHeader locale={locale} />
+        {children}
+        <SiteFooter />
+      </div>
+    </NextIntlClientProvider>
   )
 }
