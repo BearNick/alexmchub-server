@@ -1,0 +1,140 @@
+{
+  "common": {
+    "brand": "AlexMCHub",
+    "tagline": "Modern Minecraft Infrastructure",
+    "skipToContent": "Skip to content",
+    "openNavigation": "Open navigation",
+    "closeNavigation": "Close navigation",
+    "selectLanguage": "Select language",
+    "primaryNavigation": "Primary navigation",
+    "footerNavigation": "Footer navigation",
+    "copyright": "© {year} AlexMCHub. All rights reserved.",
+    "availability": "Integration ready",
+    "unavailable": "Unavailable",
+    "notConnected": "Not connected",
+    "learnMore": "Learn more",
+    "viewDocumentation": "View documentation",
+    "backHome": "Back home",
+    "copy": "Copy",
+    "copied": "Copied",
+    "search": "Search",
+    "searchLabel": "Search documentation",
+    "searchEmpty": "No matching documentation found.",
+    "notFoundTitle": "Page not found",
+    "notFoundDescription": "The requested page does not exist or is no longer available.",
+    "languageNames": {"en": "EN", "ru": "RU", "es": "ES"}
+  },
+  "navigation": {
+    "play": "Play",
+    "downloads": "Downloads",
+    "documentation": "Documentation",
+    "wiki": "Wiki",
+    "status": "Status",
+    "statistics": "Statistics",
+    "store": "Store",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "api": "API",
+    "admin": "Admin"
+  },
+  "statusCard": {
+    "title": "Network status",
+    "description": "Live values from the Minecraft server status API.",
+    "loading": "Loading status",
+    "online": "Online",
+    "offline": "Offline",
+    "unavailable": "Status unavailable",
+    "players": "Players",
+    "playerCount": "{online} / {max}",
+    "version": "Version",
+    "latency": "Latency",
+    "latencyValue": "{value} ms"
+  },
+  "home": {
+    "metaTitle": "AlexMCHub — Modern Minecraft Infrastructure",
+    "metaDescription": "Premium Minecraft infrastructure, global networking, modern tooling, and a reliable community platform.",
+    "eyebrow": "Infrastructure for persistent worlds",
+    "title": "Minecraft, engineered for what comes next.",
+    "description": "A reliable platform for players, communities, and operators—built around performance, transparent systems, and a long-term product architecture.",
+    "primaryAction": "Start playing",
+    "secondaryAction": "Read the docs",
+    "statusLabel": "Network status",
+    "statusValue": "Awaiting live data",
+    "statusDescription": "Live values appear only when the status API is connected.",
+    "sectionEyebrow": "Built as a platform",
+    "sectionTitle": "One ecosystem. Clear boundaries. Ready to scale.",
+    "sectionDescription": "Every surface shares the same design system, localization layer, and API contracts.",
+    "features": {
+      "performance": {"title": "Performance first", "description": "Infrastructure boundaries are prepared for proxy, compatibility, and monitoring integrations without coupling the interface to a provider."},
+      "global": {"title": "Global by design", "description": "Locale-aware routing, accessible interaction, and responsive layouts are part of the foundation—not later additions."},
+      "observable": {"title": "Observable systems", "description": "Status, statistics, and administrative surfaces consume replaceable typed API contracts and never invent operational data."}
+    },
+    "platformTitle": "Explore the platform",
+    "platformDescription": "Public, player, and operational experiences remain consistent while evolving independently.",
+    "ctaTitle": "A better foundation for every world.",
+    "ctaDescription": "Connect when server details are published, or explore the documentation today."
+  },
+  "pages": {
+    "play": {
+      "metaTitle": "Play — AlexMCHub", "metaDescription": "Official connection information for AlexMCHub Java and Bedrock editions.",
+      "eyebrow": "Connect", "title": "Choose your edition.", "description": "Official connection details are displayed only when they are configured by the network team.", "primaryAction": "View server status", "secondaryAction": "Download launcher",
+      "features": {"one": {"title": "Java Edition", "description": "Desktop connection information with a copy-ready server address."}, "two": {"title": "Bedrock Edition", "description": "Mobile and console connection information with explicit address and port."}, "three": {"title": "Verified details", "description": "No estimated versions, player counts, or connection values are presented."}}
+    },
+    "downloads": {
+      "metaTitle": "Downloads — AlexMCHub", "metaDescription": "Official AlexMCHub client and launcher downloads.",
+      "eyebrow": "Official software", "title": "Downloads you can trust.", "description": "Signed client software and release information will be published here through the download API.", "primaryAction": "Read installation guide", "secondaryAction": "View release status",
+      "features": {"one": {"title": "Launcher", "description": "Prepared for platform-specific releases, checksums, and signed distribution metadata."}, "two": {"title": "Integrity", "description": "The download contract supports version, size, signature, and checksum verification."}, "three": {"title": "Release channels", "description": "Stable and preview channels can be introduced without changing the page architecture."}}
+    },
+    "documentation": {
+      "metaTitle": "Documentation — AlexMCHub", "metaDescription": "Guides and technical documentation for AlexMCHub.",
+      "eyebrow": "Documentation", "title": "Build context, not confusion.", "description": "Structured, searchable guidance for players, operators, and future integration developers.", "primaryAction": "Open API documentation", "secondaryAction": "Start playing",
+      "features": {"one": {"title": "Getting started", "description": "Connection, client, and account guidance organized around clear user outcomes."}, "two": {"title": "Operations", "description": "Architecture-ready sections for networking, permissions, monitoring, and deployment."}, "three": {"title": "Markdown ready", "description": "Content boundaries are ready to move to localized Markdown or a content platform."}}
+    },
+    "wiki": {
+      "metaTitle": "Wiki — AlexMCHub", "metaDescription": "AlexMCHub gameplay and community knowledge base.",
+      "eyebrow": "Knowledge base", "title": "A shared source of truth.", "description": "Gameplay systems, community policies, and world knowledge can live in a localized, searchable catalog.", "primaryAction": "Browse documentation", "secondaryAction": "Visit profile",
+      "features": {"one": {"title": "Gameplay", "description": "Prepared for mechanics, progression, commands, and world-specific guides."}, "two": {"title": "Community", "description": "Policies and contribution guidance share consistent revision metadata."}, "three": {"title": "Searchable", "description": "The content model is ready for a dedicated full-text search provider."}}
+    },
+    "status": {
+      "metaTitle": "Status — AlexMCHub", "metaDescription": "Live operational status for AlexMCHub services.",
+      "eyebrow": "Operations", "title": "Network status, without guesswork.", "description": "Service health appears only when verified data is returned by the monitoring API.", "primaryAction": "View API documentation", "secondaryAction": "Read documentation",
+      "features": {"one": {"title": "Minecraft network", "description": "Current state: unavailable until the server API is connected."}, "two": {"title": "Authentication", "description": "Current state: unavailable until an authentication provider is connected."}, "three": {"title": "Platform APIs", "description": "Current state: unavailable until monitoring is connected."}}
+    },
+    "statistics": {
+      "metaTitle": "Statistics — AlexMCHub", "metaDescription": "Verified player and network statistics for AlexMCHub.",
+      "eyebrow": "Insights", "title": "Measured, never manufactured.", "description": "Player and network metrics remain empty until a verified statistics source is connected.", "primaryAction": "View status", "secondaryAction": "Open dashboard",
+      "features": {"one": {"title": "Player activity", "description": "Prepared for privacy-aware aggregate activity from the player statistics API."}, "two": {"title": "Network performance", "description": "Prepared for Prometheus and Grafana time-series data."}, "three": {"title": "World insights", "description": "Prepared for map and gameplay analytics with explicit data provenance."}}
+    },
+    "store": {
+      "metaTitle": "Store — AlexMCHub", "metaDescription": "The official AlexMCHub store experience.",
+      "eyebrow": "Store", "title": "Commerce with clear boundaries.", "description": "The storefront is prepared for product catalogs, regional formatting, and a dedicated payment API.", "primaryAction": "Read purchase policy", "secondaryAction": "Visit profile",
+      "features": {"one": {"title": "Catalog", "description": "Localized products and pricing will come from the commerce API."}, "two": {"title": "Payments", "description": "Payment processing remains isolated from the presentation layer."}, "three": {"title": "Entitlements", "description": "Purchases can map to server permissions through a future audited workflow."}}
+    },
+    "dashboard": {
+      "metaTitle": "Dashboard — AlexMCHub", "metaDescription": "Your AlexMCHub player dashboard.",
+      "eyebrow": "Player workspace", "title": "Your network, in one place.", "description": "Account, play, purchase, and statistics modules are ready for an authenticated player session.", "primaryAction": "View profile", "secondaryAction": "Open settings",
+      "features": {"one": {"title": "Account overview", "description": "Authentication state is not connected."}, "two": {"title": "Player activity", "description": "Player statistics are not connected."}, "three": {"title": "Entitlements", "description": "Store and permission data are not connected."}}
+    },
+    "profile": {
+      "metaTitle": "Profile — AlexMCHub", "metaDescription": "Manage your AlexMCHub player profile.",
+      "eyebrow": "Identity", "title": "Your player identity.", "description": "Prepared for Microsoft, offline, and hybrid authentication without binding the UI to one identity provider.", "primaryAction": "Open settings", "secondaryAction": "View dashboard",
+      "features": {"one": {"title": "Microsoft", "description": "Future authenticated identity provider integration."}, "two": {"title": "Offline", "description": "Future network-managed identity flow."}, "three": {"title": "Hybrid", "description": "Future account linking and conflict resolution workflow."}}
+    },
+    "settings": {
+      "metaTitle": "Settings — AlexMCHub", "metaDescription": "AlexMCHub account and experience settings.",
+      "eyebrow": "Preferences", "title": "Control your experience.", "description": "Locale, privacy, communication, and account settings share one extensible preference model.", "primaryAction": "View profile", "secondaryAction": "Read privacy guide",
+      "features": {"one": {"title": "Language", "description": "Your selected language is remembered across visits."}, "two": {"title": "Privacy", "description": "Prepared for explicit consent and data visibility controls."}, "three": {"title": "Notifications", "description": "Prepared for opt-in email, Discord, and platform notifications."}}
+    },
+    "api": {
+      "metaTitle": "API Documentation — AlexMCHub", "metaDescription": "Frontend contracts and future API integration documentation for AlexMCHub.",
+      "eyebrow": "Developer platform", "title": "Stable contracts for evolving systems.", "description": "Typed frontend boundaries are prepared for server, payment, monitoring, map, and player APIs.", "primaryAction": "Read documentation", "secondaryAction": "View status",
+      "features": {"one": {"title": "Typed contracts", "description": "Responses use explicit availability states instead of fabricated fallback values."}, "two": {"title": "Provider adapters", "description": "External systems integrate behind replaceable adapters."}, "three": {"title": "Versioning", "description": "The architecture supports additive versioning and migration without page rewrites."}}
+    },
+    "admin": {
+      "metaTitle": "Admin — AlexMCHub", "metaDescription": "AlexMCHub administration interface.",
+      "eyebrow": "Administration", "title": "Operate with confidence.", "description": "A frontend shell for servers, players, plugins, permissions, network health, and audit activity.", "primaryAction": "View network status", "secondaryAction": "Open API documentation",
+      "features": {"one": {"title": "Infrastructure", "description": "Server, proxy, compatibility, and monitoring data are not connected."}, "two": {"title": "Access control", "description": "LuckPerms and administrator identity are not connected."}, "three": {"title": "Auditability", "description": "Administrative events remain empty until an audited API is connected."}}
+    }
+  }
+}

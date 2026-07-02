@@ -1,0 +1,14 @@
+x  children: React.ReactNode;
+}>) {
+  const locale = await getLocale()
+  const messages = await getMessages()
+  return (
+    <html lang={locale} className="h-full scroll-smooth antialiased">
+      <body className="min-h-full bg-background text-foreground">
+        <NextIntlClientProviderlocale={locale}messages={messages}>
+          {children}
+        </NextIntlClientProvider>
+      </body>
+    </html>
+  )
+}
